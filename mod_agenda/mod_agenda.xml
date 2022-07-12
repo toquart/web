@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="4.0" method="upgrade" client="site">
+    <name>Agenda</name>
+    <creationDate>April 2022</creationDate>
+    <author>Adrien Beaugendre</author>
+    <authorEmail>adrien.beaugendre@gmail.com</authorEmail>
+    <copyright>Copyright (C) 2022 Adrien Beaugendre, All rights reserved.</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <version>1.1</version>
+    <description>MOD_AGENDA_XML_DESCRIPTION</description>
+    <namespace>Joomla\Module\Agenda</namespace>
+
+    <files>
+        <filename module="mod_agenda">mod_agenda.php</filename>
+        <filename>mod_agenda.xml</filename>
+        <folder>tmpl</folder>
+        <folder>tmpl/default</folder>
+    </files>
+
+    <languages folder="languages">
+    	<language tag="en-GB">en-GB/en-GB.mod_agenda.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_agenda.sys.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.mod_agenda.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.mod_agenda.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name = "title_Event_1"
+                    type = "text"
+                    label = "MOD_TITLE_EVENT_1"
+                    description = "MOD_TITLE_DESC_EVENT_1"
+                >
+                </field>
+                <field
+                    name = "type_Event_1"
+                    type = "list"
+                    label = "MOD_TYPE_EVENT_1"
+                    description = "MOD_TYPE_DESC_EVENT_1"
+                >
+                    <option value="v1">MOD_AGENDA_TYPE_COMP</option>
+					<option value="v2">MOD_AGENDA_TYPE_VIE_CLUB</option>
+                    <option value="v2">MOD_AGENDA_TYPE_ENTRAINEMENT</option>
+				</field>
+
+                <field
+                    name = "date_Event_1"
+                    type = "calendar"
+                    label = "MOD_DATE_EVENT_1"
+                    description = "MOD_DATE_DESC_EVENT_1"
+                >
+                </field>
+                <field
+                    name = "location_Event_1"
+                    type = "text"
+                    label = "MOD_LOCATION_EVENT_1"
+                    description = "MOD_LOCATION_DESC_EVENT_1"
+                >
+                </field>
+
+
+
+
+                <field
+                    name = "title_Event_2"
+                    type = "text"
+                    label = "MOD_TITLE_EVENT_2"
+                    description = "MOD_TITLE_DESC_EVENT_2"
+                >
+                </field>
+                <field
+                    name = "type_Event_2"
+                    type = "list"
+                    label = "MOD_TYPE_EVENT_2"
+                    description = "MOD_TYPE_DESC_EVENT_2"
+                >
+                    <option value="v1">MOD_AGENDA_TYPE_COMP</option>
+					<option value="v2">MOD_AGENDA_TYPE_VIE_CLUB</option>
+                    <option value="v2">MOD_AGENDA_TYPE_ENTRAINEMENT</option>
+				</field>
+                <field
+                    name = "date_Event_2"
+                    type = "calendar"
+                    label = "MOD_DATE_EVENT_2"
+                    description = "MOD_DATE_DESC_EVENT_2"
+                >
+                </field>
+                <field
+                    name = "location_Event_2"
+                    type = "text"
+                    label = "MOD_LOCATION_EVENT_1"
+                    description = "MOD_LOCATION_DESC_EVENT_1"
+                >
+                </field>
+
+
+                
+                <field
+                    name = "title_Event_3"
+                    type = "text"
+                    label = "MOD_TITLE_EVENT_3"
+                    description = "MOD_TITLE_DESC_EVENT_3"
+                >
+                </field>
+                <field
+                    name = "type_Event_3"
+                    type = "list"
+                    label = "MOD_TYPE_EVENT_3"
+                    description = "MOD_TYPE_DESC_EVENT_3"
+                >
+                    <option value="v1">MOD_AGENDA_TYPE_COMP</option>
+					<option value="v2">MOD_AGENDA_TYPE_VIE_CLUB</option>
+                    <option value="v2">MOD_AGENDA_TYPE_ENTRAINEMENT</option>
+				</field>
+
+                <field
+                    name = "date_Event_3"
+                    type = "calendar"
+                    label = "MOD_DATE_EVENT_3"
+                    description = "MOD_DATE_DESC_EVENT_3"
+                >
+                </field>
+                <field
+                    name = "location_Event_3"
+                    type = "text"
+                    label = "MOD_LOCATION_EVENT_1"
+                    description = "MOD_LOCATION_DESC_EVENT_1"
+                >
+                </field>
+
+
+
+                <field
+                    name = "title_Event_4"
+                    type = "text"
+                    label = "MOD_TITLE_EVENT_4"
+                    description = "MOD_TITLE_DESC_EVENT_4"
+                >
+                </field>
+                <field
+                    name = "type_Event_4"
+                    type = "list"
+                    label = "MOD_TYPE_EVENT_4"
+                    description = "MOD_TYPE_DESC_EVENT_4"
+                >
+                    <option value="v1">MOD_AGENDA_TYPE_COMP</option>
+					<option value="v2">MOD_AGENDA_TYPE_VIE_CLUB</option>
+                    <option value="v2">MOD_AGENDA_TYPE_ENTRAINEMENT</option>
+				</field>
+
+                <field
+                    name = "date_Event_4"
+                    type = "calendar"
+                    label = "MOD_DATE_EVENT_4"
+                    description = "MOD_DATE_DESC_EVENT_4"
+                >
+                </field>
+                <field
+                    name = "location_Event_4"
+                    type = "text"
+                    label = "MOD_LOCATION_EVENT_1"
+                    description = "MOD_LOCATION_DESC_EVENT_1"
+                >
+                </field>
+
+
+
+                <field
+                    name = "title_Event_5"
+                    type = "text"
+                    label = "MOD_TITLE_EVENT_5"
+                    description = "MOD_TITLE_DESC_EVENT_5"
+                >
+                </field>
+                <field
+                    name = "type_Event_5"
+                    type = "list"
+                    label = "MOD_TYPE_EVENT_5"
+                    description = "MOD_TYPE_DESC_EVENT_5"
+                >
+                    <option value="v1">MOD_AGENDA_TYPE_COMP</option>
+					<option value="v2">MOD_AGENDA_TYPE_VIE_CLUB</option>
+                    <option value="v2">MOD_AGENDA_TYPE_ENTRAINEMENT</option>
+				</field>
+
+                <field
+                    name = "date_Event_5"
+                    type = "calendar"
+                    label = "MOD_DATE_EVENT_5"
+                    description = "MOD_DATE_DESC_EVENT_5"
+                >
+                </field>
+                <field
+                    name = "location_Event_5"
+                    type = "text"
+                    label = "MOD_LOCATION_EVENT_1"
+                    description = "MOD_LOCATION_DESC_EVENT_1"
+                >
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>
