@@ -1,0 +1,3460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="4.0" method="upgrade" client="site">
+    <name>Records</name>
+    <creationDate>July 2022</creationDate>
+    <author>Adrien Beaugendre</author>
+    <authorEmail>adrien.beaugendre@gmail.com</authorEmail>
+    <copyright>Copyright (C) 2022 Adrien Beaugendre, All rights reserved.</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <version>1.0</version>
+    <description>MOD_RECORDS_XML_DESCRIPTION</description>
+    <namespace>Joomla\Module\Records</namespace>
+
+    <files>
+        <filename module="mod_records">mod_records.php</filename>
+        <filename>mod_records.xml</filename>
+        <folder>tmpl</folder>
+        <folder>tmpl/default</folder>
+    </files>
+
+    <languages folder="languages">
+    	<language tag="en-GB">en-GB/en-GB.mod_records.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_records.sys.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.mod_records.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.mod_records.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name = "W50"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+            </fieldset>
+
+            <fieldset name="femmeAllCatIn" label = "MOD_F_ALL_CAT_IN">
+                <fieldset name="W50mIndoor" label = "MOD_50">
+                    <field
+                        name = "W50Name"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W50Perf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W50Date"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W50Wind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W50Space"
+                        type = "text"
+                        label = "MOD_DESC_SPACE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W60mIndoor" label = "MOD_60">
+                    <field
+                        name = "W60Name"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W60Perf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W60Date"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W60Wind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W200mIndoor" label = "MOD_200">
+                    <field
+                        name = "W200Name"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W200Perf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W200Date"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W200Wind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W400mIndoor" label = "MOD_400">
+                    <field
+                        name = "W400Name"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W400Perf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W400Date"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W400Wind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W800mIndoor" label = "MOD_800"> 
+                    <field
+                        name = "W800Name"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W800Perf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W800Date"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W800Wind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W1000mIndoor" label = "MOD_1000"> 
+                    <field
+                        name = "W1000Name"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W1000Perf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W1000Date"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W1000Wind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="WMileIndoor" label = "MOD_MILE">
+                    <field
+                        name = "WMileName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WMilPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WMileDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WMileWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W1500Indoor" label = "MOD_1500">
+                    <field
+                        name = "W1500Name"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W1500Perf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W1500Date"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W1500Wind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W3000Indoor" label = "MOD_3000">
+                    <field
+                        name = "W3000Name"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W3000Perf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W3000Date"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W3000Wind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W5000Indoor" label = "MOD_5000">
+                    <field
+                        name = "W5000Name"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W5000Perf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W5000Date"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W5000Wind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W50HIndoor" label = "MOD_50H">
+                    <field
+                        name = "W50HName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W50HPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W50HDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W50HWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W60HIndoor" label = "MOD_60H">
+                    <field
+                        name = "W60HName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W60HPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W60HDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W60HWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="WHJumpIndoor" label = "MOD_HJUMP">
+                    <field
+                        name = "WHJumpName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WHJumpPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WHJumpDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WHJumpWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="WPVIndoor" label = "MOD_PV">				
+                    <field
+                        name = "WPVName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WPVPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WPVDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WPVWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="WLJumpIndoor" label = "MOD_LJUMP">
+                    <field
+                        name = "WLJumpName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WLJumpPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WLJumpDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WLJumpWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="WSPIndoor" label = "MOD_SP">
+                    <field
+                        name = "WSPName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WSPPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WSPDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WSPWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="WPenIndoor" label = "MOD_PEN">
+                    <field
+                        name = "WPenName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WPenPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WPenDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WPenWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="WMar3Indoor" label = "MOD_MAR3">
+                    <field
+                        name = "WMarName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WMarPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WMarDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "WMarWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W200ReIndoor" label = "MOD_200RELAY">
+                    <field
+                        name = "W200RHName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W200RPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W200RDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W200RWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field type="spacer" hr="true" />
+                </fieldset>
+
+                <fieldset name="W400ReIndoor" label = "MOD_400RELAY">
+                    <field type="spacer" label="MOD_400RELAY" /> 
+                    <field
+                        name = "W400RName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W400RPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W400RDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W400RWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>
+
+                <fieldset name="W800ReIndoor" label = "MOD_800RELAY">
+                    <field
+                        name = "W800RName"
+                        type = "text"
+                        label = "MOD_DESC_NAME"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W800RPerf"
+                        type = "text"
+                        label = "MOD_DESC_PERF"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W800RDate"
+                        type = "text"
+                        label = "MOD_DESC_DATE"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                    <field
+                        name = "W800RWind"
+                        type = "text"
+                        label = "MOD_DESC_WIND"
+                        description = "MOD_DESC_PERF">
+                    </field>
+                </fieldset>-->
+
+            </fieldset>
+
+            <fieldset name="hommeAllCatIn" label = "MOD_H_ALL_CAT_IN">
+                <field type="spacer" label="MOD_50" /> 
+                <field
+                    name = "M50Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M50Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M50Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M50Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_60" /> 
+                <field
+                    name = "M60Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M60Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M60Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M60Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_200" /> 
+                <field
+                    name = "M200Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_400" /> 
+                <field
+                    name = "M400Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_800" /> 
+                <field
+                    name = "M800Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_1000" /> 
+                <field
+                    name = "M1000Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1000Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1000Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1000Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MILE" /> 
+                <field
+                    name = "MMileName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMilPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMileDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMileWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_1500" /> 
+                <field
+                    name = "M1500Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1500Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1500Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1500Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_3000" /> 
+                <field
+                    name = "M3000Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M3000Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M3000Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M3000Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_5000" /> 
+                <field
+                    name = "M5000Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M5000Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M5000Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M5000Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_50H" /> 
+                <field
+                    name = "M50HName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M50HPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M50HDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M50HWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_60H" /> 
+                <field
+                    name = "M60HName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M60HPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M60HDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M60HWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_HJUMP" /> 
+                <field
+                    name = "MHJumpName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHJumpPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHJumpDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHJumpWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+				
+                <field type="spacer" label="MOD_PV" /> 
+                <field
+                    name = "MPVName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MPVPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MPVDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MPVWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_LJUMP" /> 
+                <field
+                    name = "MLJumpName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MLJumpPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MLJumpDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MLJumpWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_SP" /> 
+                <field
+                    name = "MSPName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MSPPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MSPDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MSPWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_HEPT" /> 
+                <field
+                    name = "MHeptName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHeptPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHeptDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHeptWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR5" /> 
+                <field
+                    name = "MMarName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMarPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMarDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMarWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_200RELAY" /> 
+                <field
+                    name = "M200RHName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200RPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200RDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200RWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_400RELAY" /> 
+                <field
+                    name = "M400RName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400RPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400RDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400RWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" /> 
+
+                <field type="spacer" label="MOD_800RELAY" /> 
+                <field
+                    name = "M800RName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800RPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800RDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800RWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+            </fieldset>
+
+            <fieldset name="femmeAllCatOut" label = "MOD_F_ALL_CAT_OUT">
+                <field type="spacer" label="MOD_100" /> 
+                <field
+                    name = "W100Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_200" /> 
+                <field
+                    name = "W200NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W200PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W200DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W200WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_400" /> 
+                <field
+                    name = "W400NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W400PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W400DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W400WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_800" /> 
+                <field
+                    name = "W800Name0"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W800Perf0"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W800DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W800WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_1000" /> 
+                <field
+                    name = "W1000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MILE" /> 
+                <field
+                    name = "WMileNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMilPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMileDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMileWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_1500" /> 
+                <field
+                    name = "W1500NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1500PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1500DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1500WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_2000" /> 
+                <field
+                    name = "W2000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W2000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W2000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W2000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_3000" /> 
+                <field
+                    name = "W3000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W3000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W3000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W3000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_5000" /> 
+                <field
+                    name = "W5000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W5000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W5000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W5000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_5K" /> 
+                <field
+                    name = "W5kNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W5kPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W5kDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W5kWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_10000" /> 
+                <field
+                    name = "W10000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W10000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W10000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W10000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_10K" /> 
+                <field
+                    name = "W10kNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W10kPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W10kDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W10kWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_1H" /> 
+                <field
+                    name = "W1hNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1hPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1hDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1hWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_HFMARA" /> 
+                <field
+                    name = "WHaMaraNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WHaMaraPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WHaMaraDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WHaMaraWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MARA" /> 
+                <field
+                    name = "WMaraNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMaraPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMaraDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMaraWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_50K" /> 
+                <field
+                    name = "W50kNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W50kPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W50kDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W50kWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_100K" /> 
+                <field
+                    name = "W100kNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100kPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100kDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100kWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_3000ST" /> 
+                <field
+                    name = "W3000StNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W3000StPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W3000StDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W3000StWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_100H" /> 
+                <field
+                    name = "W100HName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100HPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100HDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100HWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_400H" /> 
+                <field
+                    name = "W400HName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W400HPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W400HDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W400HWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_HJUMP" /> 
+                <field
+                    name = "WHJumpNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WHJumpPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WHJumpDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WHJumpWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+				
+                <field type="spacer" label="MOD_PV" /> 
+                <field
+                    name = "WPVNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WPVPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WPVDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WPVWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_LJUMP" /> 
+                <field
+                    name = "WLJumpNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WLJumpPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WLJumpDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WLJumpWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_SP" /> 
+                <field
+                    name = "WSPNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WSPPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WSPDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WSPWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_DISC" /> 
+                <field
+                    name = "WDiscNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WDiscPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WDiscDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WDiscWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MART" /> 
+                <field
+                    name = "WMartNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMartPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMartDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMartWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_JAV" /> 
+                <field
+                    name = "WJavNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WJavPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WJavDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WJavWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_HEPT" /> 
+                <field
+                    name = "WHeptName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WHeptPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WHeptDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WHeptWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_DECA" /> 
+                <field
+                    name = "WDecaName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WDecaPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WDecaDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WDecaWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR3" /> 
+                <field
+                    name = "WMarName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMarPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMarDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMarWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR5" /> 
+                <field
+                    name = "WMar5Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar5Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar5Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar5Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR10" /> 
+                <field
+                    name = "WMar10Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar10Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar10Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar10Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR20" /> 
+                <field
+                    name = "WMar20Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar20Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar20Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar20Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR20K" /> 
+                <field
+                    name = "WMar20kName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar20kPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar20kDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar20kWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR50K" /> 
+                <field
+                    name = "WMar50Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar50Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar50Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WMar50Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_100RELAY" /> 
+                <field
+                    name = "W100RHName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100RPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100RDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W100RWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_200RELAY" /> 
+                <field
+                    name = "W200RHNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W200RPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W200RDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W200RWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_400RELAY" /> 
+                <field
+                    name = "W400RNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W400RPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W400RDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W400RWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" /> 
+
+                <field type="spacer" label="MOD_800RELAY" /> 
+                <field
+                    name = "W800RNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W800RPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W800RDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W800RWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" /> 
+
+                <field type="spacer" label="MOD_1500RELAY" /> 
+                <field
+                    name = "W1500RHName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1500RPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1500RDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "W1500RWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />    
+
+                <field type="spacer" label="MOD_EKIDEN" /> 
+                <field
+                    name = "WEkiRHName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WEkiRPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WEkiRDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "WEkiRWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />          
+
+            </fieldset>
+
+            <fieldset name="hommeAllCatOut" label = "MOD_H_ALL_CAT_OUT">
+                <field type="spacer" label="MOD_100" /> 
+                <field
+                    name = "M100Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_200" /> 
+                <field
+                    name = "M200NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_400" /> 
+                <field
+                    name = "M400NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_800" /> 
+                <field
+                    name = "M800Name0"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800Perf0"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_1000" /> 
+                <field
+                    name = "M1000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MILE" /> 
+                <field
+                    name = "MMileNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMilPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMileDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMileWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_1500" /> 
+                <field
+                    name = "M1500NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1500PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1500DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1500WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_2000" /> 
+                <field
+                    name = "M2000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M2000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M2000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M2000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_3000" /> 
+                <field
+                    name = "M3000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M3000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M3000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M3000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_5000" /> 
+                <field
+                    name = "M5000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M5000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M5000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M5000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_5K" /> 
+                <field
+                    name = "M5kNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M5kPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M5kDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M5kWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_10000" /> 
+                <field
+                    name = "M10000NameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M10000PerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M10000DateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M10000WindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_10K" /> 
+                <field
+                    name = "M10kNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M10kPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M10kDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M10kWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_1H" /> 
+                <field
+                    name = "M1hNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1hPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1hDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1hWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_HFMARA" /> 
+                <field
+                    name = "MHaMaraNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHaMaraPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHaMaraDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHaMaraWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MARA" /> 
+                <field
+                    name = "MMaraNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMaraPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMaraDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMaraWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_50K" /> 
+                <field
+                    name = "M50kNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M50kPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M50kDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M50kWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_100K" /> 
+                <field
+                    name = "M100kNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100kPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100kDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100kWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_3000ST" /> 
+                <field
+                    name = "M3000StNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M3000StPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M3000StDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M3000StWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_100H" /> 
+                <field
+                    name = "M100HName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100HPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100HDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100HWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_400H" /> 
+                <field
+                    name = "M400HName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400HPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400HDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400HWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_HJUMP" /> 
+                <field
+                    name = "MHJumpNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHJumpPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHJumpDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHJumpWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+				
+                <field type="spacer" label="MOD_PV" /> 
+                <field
+                    name = "MPVNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MPVPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MPVDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MPVWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_LJUMP" /> 
+                <field
+                    name = "MLJumpNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MLJumpPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MLJumpDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MLJumpWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_SP" /> 
+                <field
+                    name = "MSPNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MSPPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MSPDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MSPWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_DISC" /> 
+                <field
+                    name = "MDiscNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MDiscPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MDiscDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MDiscWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MART" /> 
+                <field
+                    name = "MMartNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMartPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMartDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMartWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_JAV" /> 
+                <field
+                    name = "MJavNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MJavPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MJavDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MJavWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_HEPT" /> 
+                <field
+                    name = "MHeptName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHeptPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHeptDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MHeptWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_DECA" /> 
+                <field
+                    name = "MDecaName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MDecaPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MDecaDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MDecaWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR3" /> 
+                <field
+                    name = "MMarName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMarPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMarDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMarWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR5" /> 
+                <field
+                    name = "MMar5Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar5Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar5Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar5Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR10" /> 
+                <field
+                    name = "MMar10Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar10Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar10Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar10Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR20" /> 
+                <field
+                    name = "MMar20Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar20Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar20Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar20Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR20K" /> 
+                <field
+                    name = "MMar20kName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar20kPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar20kDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar20kWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_MAR50K" /> 
+                <field
+                    name = "MMar50Name"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar50Perf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar50Date"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MMar50Wind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_100RELAY" /> 
+                <field
+                    name = "M100RHName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100RPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100RDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M100RWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_200RELAY" /> 
+                <field
+                    name = "M200RHNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200RPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200RDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M200RWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />
+
+                <field type="spacer" label="MOD_400RELAY" /> 
+                <field
+                    name = "M400RNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400RPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400RDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M400RWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" /> 
+
+                <field type="spacer" label="MOD_800RELAY" /> 
+                <field
+                    name = "M800RNameO"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800RPerfO"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800RDateO"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M800RWindO"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" /> 
+
+                <field type="spacer" label="MOD_1500RELAY" /> 
+                <field
+                    name = "M1500RHName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1500RPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1500RDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "M1500RWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />    
+
+                <field type="spacer" label="MOD_EKIDEN" /> 
+                <field
+                    name = "MEkiRHName"
+                    type = "text"
+                    label = "MOD_DESC_NAME"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MEkiRPerf"
+                    type = "text"
+                    label = "MOD_DESC_PERF"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MEkiRDate"
+                    type = "text"
+                    label = "MOD_DESC_DATE"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field
+                    name = "MEkiRWind"
+                    type = "text"
+                    label = "MOD_DESC_WIND"
+                    description = "MOD_DESC_PERF">
+                </field>
+                <field type="spacer" hr="true" />          
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>
